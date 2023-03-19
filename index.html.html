@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login & register</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/v4-shims.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="https://www.instagram.com/" class="social"><img src="instagram.png" alt="" height="25px" width="25px"></i></a>
+                    <a href="https://mail.google.com/" class="social"><i class="social"><img src="gmail.png" alt="" height="25px" width="25px"</i></a>
+               <a href="https://www.linkedin.com/" class="social"><img src="linkedin.png" alt="" height="25px" width="25px"></i></a> </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>sign up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="https://www.instagram.com/" class="social"><img src="instagram.png" alt="" height="25px" width="25px"></i></a>
+                    <a href="https://mail.google.com/" class="social"><i class="social"><img src="gmail.png" alt="" height="25px" width="25px"</i></a>
+               <a href="https://www.linkedin.com/" class="social"><img src="linkedin.png" alt="" height="25px" width="25px"></i></a> </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>sign up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                    <a href="https://www.instagram.com/" class="social"><img src="instagram.png" alt="" height="25px" width="25px"></i></a>
+                    <a href="https://mail.google.com/" class="social"><i class="social"><img src="gmail.png" alt="" height="25px" width="25px"</i></a>
+               <a href="https://www.linkedin.com/" class="social"><img src="linkedin.png" alt="" height="25px" width="25px"></i></a> 
+            </div>
+                <span>or use your email for registration</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>sign up</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome To FF!</h1>
+                    <p>please subscribe and support to our channel</p>
+                    <button class="press" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Frontend Forever</h1>
+                    <p>learn web designning from here in tamil and english</p>
+                    <button class="press" id="signUp">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const signUpButton = document.getElementById("signUp");
+        const signInButton = document.getElementById("signIn");
+        const container = document.getElementById("container");
+
+        signUpButton.addEventListener('click',()=>{
+            container.classList.add("right-pannel-active");
+        })
+    </script>
+</body>
+</html>
